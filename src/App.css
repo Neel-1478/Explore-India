@@ -1,0 +1,132 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f14; /* Dark blackish-blue background */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  color: #00d4ff; /* Teal/Aqua Neon */
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card {
+  background: #0e141b; /* Slightly lighter than body background */
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  text-align: left;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  /* Neumorphism effect */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8), 
+              -6px -6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8), 
+              -10px -10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: #00d4ff; /* Teal/Aqua Neon */
+  text-shadow: 0 0 5px #00d4ff;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #a8efff; /* Softer Aqua */
+  margin: 10px 0;
+}
+
+.card .btn {
+  background: #0e141b;
+  color: #00d4ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+
+  /* Neumorphism button effect */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 
+              -4px -4px 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.card .btn:hover {
+  background: #00d4ff; /* Neon teal on hover */
+  color: #0e141b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 
+              -2px -2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background: #0e141b;
+  color: #00d4ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  /* Neumorphism effect */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 
+              -4px -4px 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover {
+  background: #00d4ff;
+  color: #0e141b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 
+              -2px -2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.pagination-btn:disabled {
+  background: #444;
+  color: #666;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.pagination-dots {
+  color: #888;
+  font-size: 1.2rem;
+}
