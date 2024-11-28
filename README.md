@@ -13,3 +13,7 @@ npm i
 npm start
 
 The app will be available in your browser at http://localhost:3000.
+
+
+
+![image](https://github.com/user-attachments/assets/4fc765e9-274d-4c78-8fdc-01123d7078bf)
