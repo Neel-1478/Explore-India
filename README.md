@@ -5,12 +5,10 @@ This is a web application designed to showcase the best tourist places in India.
 ## Getting Started
 
 Follow these steps to get your local development environment set up:
-
-### 1. Clone the Repository
+1. Clone the Repository
 
 First, clone the repository to your local machine using Git:
 
-```bash
 git clone https://github.com/your-username/Explore-India.git
 Replace your-username with your actual GitHub username.
 
